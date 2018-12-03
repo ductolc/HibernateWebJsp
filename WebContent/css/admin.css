@@ -1,0 +1,21 @@
+.main-admin {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side-bar {
+    width: 30%;
+    background: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.side-bar-vt{
+	width: 30%;
+}
+
+.side-bar a{
+    color: white;
+}

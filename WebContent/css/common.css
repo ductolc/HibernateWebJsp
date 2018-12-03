@@ -1,0 +1,43 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.error {
+	color: red;
+	font-size: small;
+}
+
+.form-group, .form-group input {
+	display: block;
+}
+
+/* RESET CSS START */
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+/* RESET CSS END */

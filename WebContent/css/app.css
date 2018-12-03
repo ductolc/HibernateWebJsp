@@ -1,0 +1,10 @@
+.item {
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+.list-item {
+    display: flex;
+    flex-wrap: wrap;
+}

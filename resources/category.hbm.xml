@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="entities.Category" table="category">
+
+		<meta attribute="class-description">
+			This class contains the employee detail.
+		</meta>
+
+		<id name="id" type="int" column="idCategory">
+			<generator class="native" />
+		</id>
+
+		<property name="name" column="name" type="string" />
+
+		<bag name="products" table="product" inverse="true"
+			cascade="save-update" lazy="true" fetch="select">
+			<key>
+				<column name="idCategory" not-null="true" />
+			</key>
+			<one-to-many class="entities.Product" />
+		</bag>
+	</class>
+</hibernate-mapping>
